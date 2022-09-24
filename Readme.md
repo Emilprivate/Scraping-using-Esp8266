@@ -1,6 +1,6 @@
 ## Emils-Image_of_a_scraped_object
 
-### Idé:
+### Idea:
 
 - Scrapes a website (https://www.edoganci.dk) (my old website).
 - Finds something specific (In this case, the image on the front page of the website).
