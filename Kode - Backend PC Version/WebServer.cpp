@@ -52,7 +52,7 @@ void ScrapeWebsite() {
 	CURL* curl = nullptr;
 	curl = curl_easy_init();
 	if (curl) {
-		curl_easy_setopt(curl, CURLOPT_URL, "http://www.edoganci.dk/");
+		curl_easy_setopt(curl, CURLOPT_URL, "http://www.website.com/");
 		curl_easy_setopt(curl, CURLOPT_WRITEDATA, &contents);
 		curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, writer);
 		CURLcode code = curl_easy_perform(curl);
