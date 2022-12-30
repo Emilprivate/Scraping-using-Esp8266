@@ -2,7 +2,7 @@
 
 ### Idea:
 
-- Scrapes a website (https://www.edoganci.dk) (my old website).
+- Scrapes a website (my old website).
 - Finds something specific (In this case, the image on the front page of the website).
 - Replaces the web server title with the link to the image.
 - The web server's javascript places the image in the background of a canvas.
