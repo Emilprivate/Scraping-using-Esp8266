@@ -100,7 +100,7 @@ void createWebServer(){
 
 4)
 ``` javascript
-	var imglink = "http://www.edoganci.dk/" + document.title;
+	var imglink = "http://www.website.com/" + document.title;
 	var actualImg = new Image();
 	var pattern;
 	function init()
