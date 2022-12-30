@@ -4,7 +4,7 @@
 #include <ESP8266HTTPClient.h>
 #include <ESP8266WiFi.h>´
 
-String website = "http://www.edoganci.dk/";
+String website = "http://www.website.com/";
 const char* ssid = "NETVÆRKS NAVN";
 const char* password = "NETVÆRKS KODE";
 int port = 8080;
