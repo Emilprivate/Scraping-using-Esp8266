@@ -100,34 +100,34 @@ void createWebServer(){
 
 4)
 ``` javascript
-	var imglink = "http://www.website.com/" + document.title;
-	var actualImg = new Image();
-	var pattern;
-	function init()
-	  {
-	    context = myCanvas.getContext('2d');
-	    setInterval(draw, 10);
-	    actualImg.src = imglink;
-	    actualImg.onload = function(){
-	    	pattern = context.createPattern(this, "repeat");
-		    context.beginPath();
-		    
-		    context.fillStyle=pattern;
-		    context.arc(100,100,75,0,Math.PI*2,true); context.closePath();
-		    context.fill();
-	    }
-	  }
-	function draw()
-	{
-		 context.clearRect(0,0, canvasX,canvasY);
-		 context.beginPath();
-		 context.fillStyle = pattern;
-		 context.arc(x,y,75,0,Math.PI*2,true);
-		 context.closePath();
-		 context.fill();
-		if( x<0 || x>canvasX) dx=-dx; 
-		if( y<0 || y>canvasY) dy=-dy; 
-		x+=dx; 
-		y+=dy;
-	}
+var imglink = "http://www.website.com/" + document.title;
+var actualImg = new Image();
+var pattern;
+function init()
+  {
+    context = myCanvas.getContext('2d');
+    setInterval(draw, 10);
+    actualImg.src = imglink;
+    actualImg.onload = function(){
+	pattern = context.createPattern(this, "repeat");
+	    context.beginPath();
+
+	    context.fillStyle=pattern;
+	    context.arc(100,100,75,0,Math.PI*2,true); context.closePath();
+	    context.fill();
+    }
+  }
+function draw()
+{
+	 context.clearRect(0,0, canvasX,canvasY);
+	 context.beginPath();
+	 context.fillStyle = pattern;
+	 context.arc(x,y,75,0,Math.PI*2,true);
+	 context.closePath();
+	 context.fill();
+	if( x<0 || x>canvasX) dx=-dx; 
+	if( y<0 || y>canvasY) dy=-dy; 
+	x+=dx; 
+	y+=dy;
+}
 ```
